@@ -26,6 +26,10 @@ export const SocialMedia = styled.div`
   align-items: center;
   gap: 1rem;
   font-size: 1.75rem;
+
+  @media ${({ theme }) => theme.media.small} {
+    font-size: 2rem;
+  }
 `
 
 export const PhoneNumber = styled.span`

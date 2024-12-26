@@ -6,6 +6,10 @@ export const TopSectionBox = styled.article`
   align-items: center;
   margin: 4rem 0;
   width: 100%;
+
+  @media ${({ theme }) => theme.media.small} {
+    margin: 5rem 0;
+  }
 `
 
 export const TextBox = styled.div`
@@ -28,8 +32,8 @@ export const PrimaryText = styled.span`
   color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.media.small} {
-    width: 100%;
-    font-size: 4.5rem;
+    width: 90%;
+    font-size: 4rem;
   }
 `
 
@@ -64,5 +68,7 @@ export const Shape = styled.div`
 
   @media ${({ theme }) => theme.media.small} {
     aspect-ratio: 1;
+    margin-left: -80%;
+    width: 80%;
   }
 `

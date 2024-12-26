@@ -1,0 +1,29 @@
+import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
+import StyledComponentsRegistry from '@/lib/registry'
+import Theme from '@/components/Theme'
+import { oswald } from '@/fonts/fonts'
+
+export const metadata: Metadata = {
+  title: 'template',
+  description: 'Template for a company website'
+}
+
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html>
+      <body className={oswald.className}>
+        <Theme>
+          <StyledComponentsRegistry>
+            {children}
+            <Analytics />
+          </StyledComponentsRegistry>
+        </Theme>
+      </body>
+    </html>
+  )
+}

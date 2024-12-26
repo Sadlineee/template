@@ -11,7 +11,7 @@ export default createGlobalStyle`
     font-size: 16px;
 
     @media ${({ theme }) => theme.media.small} {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 

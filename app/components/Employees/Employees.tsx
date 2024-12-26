@@ -15,6 +15,7 @@ export default function Employees() {
                 alt={`${el.name}` + ' фото'}
                 fill={true} 
                 quality={80}
+                priority
               />
             </EmployeePhoto>
             <EmployeeDataBox>

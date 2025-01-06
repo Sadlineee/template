@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { employeesData } from '@/data/employeesData'
-import { EmployeeCard, EmployeeDataBox, EmployeeName, EmployeeOther, EmployeePhoto, EmployeesBox, EmployeesTitle } from './Employees.styled'
+import { EmployeeCard, EmployeeDataBox, EmployeeName, EmployeeOtherInfo, EmployeePhoto, EmployeesBox, EmployeesTitle } from './Employees.styled'
 
 export default function Employees() {
   return (
@@ -21,8 +21,8 @@ export default function Employees() {
             <EmployeeDataBox>
               <EmployeeName>{el.name}</EmployeeName>
               <hr />
-              <EmployeeOther>{el.role}</EmployeeOther>
-              <EmployeeOther>{el.experience}</EmployeeOther>
+              <EmployeeOtherInfo>{el.role}</EmployeeOtherInfo>
+              <EmployeeOtherInfo>{el.experience}</EmployeeOtherInfo>
             </EmployeeDataBox>
           </EmployeeCard>
         ))}

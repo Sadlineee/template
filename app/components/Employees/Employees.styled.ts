@@ -49,7 +49,7 @@ export const EmployeeName = styled.span`
   color: ${({ theme }) => theme.colors.white};
 `
 
-export const EmployeeOther = styled.span`
+export const EmployeeOtherInfo = styled.span`
   font-size: 1.4rem;
   font-weight: 300;
   color: ${({ theme }) => theme.colors.white};

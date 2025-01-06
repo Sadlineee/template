@@ -30,20 +30,10 @@ export const PrimaryText = styled.span`
   font-size: 7rem;
   font-weight: 900;
   color: ${({ theme }) => theme.colors.white};
-  animation: textRotate 0.75s ease-out;
 
   @media ${({ theme }) => theme.media.small} {
     width: 90%;
     font-size: 4rem;
-  }
-
-  @keyframes textRotate {
-    0% {
-      transform: rotateX(90deg);
-    }
-    100% {
-      transform: rotateX(0deg);
-    }
   }
 `
 
